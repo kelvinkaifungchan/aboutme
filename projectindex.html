@@ -8,8 +8,6 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
     integrity="undefined" crossorigin="anonymous">
   <link rel="stylesheet" href="./projectindex.css">
@@ -35,7 +33,7 @@
     </ul>
   </nav>
   <a name="top"></a>
-  <div class="container">
+  <div class="container-fluid">
     <div class="d-flex row justify-content-between">
       <div class="col"></div>
       <div class="col-10 my-5 py-5">
@@ -49,77 +47,173 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr data-toggle="collapse" data-target="#constructingfriction" class="accordion-toggle">
               <td>Constructing Friction</td>
               <td>Hong Kong</td>
               <td>Research</td>
               <td>2021</td>
             </tr>
             <tr>
-              <td colspan="5">
-                <div>
+              <td colspan="5" class="hiddenRow">
+                <div class="accordion-body collapse" id="constructingfriction">
                   <div class="d-flex align-items-center">
-                  <div class="col p-2">
-                    <img src="./Project Thumbnails/ConstructingFriction_1.jpg" class="img-thumbnail border-0">
+                    <div class="col p-2">
+                      <img id="cfp" src="./Project Thumbnails/ConstructingFriction_1.jpg"
+                        class="img-thumbnail border-0">
+                    </div>
+                    <div class="col p-2">
+                      Constructing Friction renegotiates planning legislation to construct a new domestic landscape,
+                      dissolving the dichotomy between the domestic and the non-domestic, the public and the private.
+                    </div>
                   </div>
-                  <div class="col p-2">
-                    Constructing Friction renegotiates planning legislation to construct a new domestic landscape,
-                    dissolving the dichotomy between the domestic and the non-domestic, the public and the private.
-                  </div>
-                </div>
               </td>
       </div>
       </tr>
-      <tr>
-        <td class="font-italic">Untitled: A 1:1 Model</td>
+      <tr data-toggle="collapse" data-target="#untitled" class="accordion-toggle">
+        <td class="font-italic">Untitled: A 1:1 Model (Studio*)</td>
         <td>London, UK</td>
         <td>Installation</td>
         <td>2020</td>
       </tr>
       <tr>
-        <td class="font-italic">Yanjiang Primary School (Domat)</td>
-        <td>Jiangxi, China</td>
-        <td>Building</td>
-        <td>2020</td>
-      </tr>
-      <tr>
-        <td class="font-italic">Brewery On A Hill</td>
-        <td>Chuncheon, South Korea</td>
-        <td>Building</td>
-        <td>2019</td>
-      </tr>
-      <tr>
-        <td class="font-italic">AAxAmnesty International Pavillion</td>
-        <td>London, UK</td>
-        <td>Competition</td>
-        <td>2019</td>
-      </tr>
-      <tr>
-        <td class="font-italic">ArupxCricursa Glasstec Exhibition</td>
-        <td>Dusseldorf, Germany</td>
-        <td>Competition</td>
-        <td>2019</td>
-      </tr>
-      <tr>
-        <td class="font-italic">The Switch</td>
-        <td>Seoul, South Korea</td>
-        <td>Research</td>
-        <td>2019</td>
-      </tr>
-      <tr>
-      </tbody>
-      </table>
+        <td colspan="5" class="hiddenRow">
+          <div class="accordion-body collapse" id="untitled">
+            <div class="d-flex align-items-center">
+              <div class="col p-2">
+                <img id="" src="./Project Thumbnails/Untitled.jpg" class="img-thumbnail border-0">
+              </div>
+              <div class="col p-2">
+              </div>
+            </div>
+        </td>
     </div>
-    <div class="col"></div>
+    </tr>
+    <tr data-toggle="collapse" data-target="#yps" class="accordion-toggle">
+      <td class="font-italic">Yanjiang Primary School (Domat)</td>
+      <td>Jiangxi, China</td>
+      <td>Building</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td colspan="5" class="hiddenRow">
+        <div class="accordion-body collapse" id="yps">
+          <div class="d-flex align-items-center">
+            <div class="col p-2">
+              <img id="" src="./Project Thumbnails/Yanjiang Primary School.jpg" class="img-thumbnail border-0">
+            </div>
+            <div class="col p-2">
+            </div>
+          </div>
+      </td>
+  </div>
+  </tr>
+  <tr data-toggle="collapse" data-target="#boah" class="accordion-toggle">
+    <td class="font-italic">Brewery On A Hill</td>
+    <td>Chuncheon, South Korea</td>
+    <td>Building</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td colspan="5" class="hiddenRow">
+      <div class="accordion-body collapse" id="boah">
+        <div class="d-flex align-items-center">
+          <div class="col p-2">
+            <img id="" src="./Project Thumbnails/Brewery On A Hill.jpg" class="img-thumbnail border-0">
+          </div>
+          <div class="col p-2">
+            The proposal is for a brewery atop a prominent hill in Chuncheon, South Korea, operating as a gathering space with a panoramic view onto the Inbuk Ch’on River.
+          </div>
+        </div>
+    </td>
+    </div>
+  </tr>
+  <tr data-toggle="collapse" data-target="#amnesty" class="accordion-toggle">
+    <td class="font-italic">AAxAmnesty International Pavillion (Studio*)</td>
+    <td>London, UK</td>
+    <td>Competition</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td colspan="5" class="hiddenRow">
+      <div class="accordion-body collapse" id="amnesty">
+        <div class="d-flex align-items-center">
+          <div class="col p-2">
+            <img id="" src="./Project Thumbnails/AAxAmnesty.jpg" class="img-thumbnail border-0">
+          </div>
+          <div class="col p-2">
+            Efforts need to be made in understanding the material ecology of mycelium and timber specific to the
+            conditions of Syria. The proposal extends the brief to reconsider the approach to construction in conflict
+            zones, and the potential of mycelium as an insulation material as opposed to form generator.
+          </div>
+        </div>
+    </td>
+    </div>
+  </tr>
+  <tr data-toggle="collapse" data-target="#glasstec" class="accordion-toggle">
+    <td class="font-italic">ArupxCricursa Glasstec Exhibition (Studio*)</td>
+    <td>Dusseldorf, Germany</td>
+    <td>Competition</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td colspan="5" class="hiddenRow">
+      <div class="accordion-body collapse" id="glasstec">
+        <div class="d-flex align-items-center">
+          <div class="col p-2">
+            <img id="" src="./Project Thumbnails/Glasstec.jpg" class="img-thumbnail border-0">
+          </div>
+          <div class="col p-2">
+            PARADISE (Ancient Persian: Pairi - Daēza = Walled Enclosure): The idea of a garden is a paradise that we can
+            control - equally part of yet separate to the world. The proposal is a series of standard and bespoke
+            Cricursa parts assembled to create a continuous wall, defining the perimeter of a garden. Spaces are
+            activated by Glasstec delegates who can stop to sit, socialise and admire the possibilities of Cricursa’s
+            technology.
+          </div>
+        </div>
+    </td>
+    </div>
+  </tr>
+  <tr data-toggle="collapse" data-target="#switch" class="accordion-toggle">
+    <td class="font-italic">The Switch</td>
+    <td>Seoul, South Korea</td>
+    <td>Research</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+  <tr>
+    <td colspan="5" class="hiddenRow">
+      <div class="accordion-body collapse" id="switch">
+        <div class="d-flex align-items-center">
+          <div class="col p-2">
+            <img id="" src="./Project Thumbnails/The Switch.jpg" class="img-thumbnail border-0">
+          </div>
+          <div class="col p-2">
+            The Switch proposes an additive system to the existing food distribution ecology in Seoul, South Korea, to
+            reconnect the suburb of Gasan-Dong. The system is imagined as four layers of supports: Network,
+            Infrastructure, Enclosure, Furniture allowing a constant renegotiation of the architecture over time.
+          </div>
+        </div>
+    </td>
+    </div>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <div class="col"></div>
   </div>
   </div>
   <footer class="d-flex justify-content-end">
     <a href="#top" id="linktop" class="mr-5">Back to top</a>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <script src="./projectindex.js"></script>
 </body>
 

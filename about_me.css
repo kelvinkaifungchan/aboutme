@@ -19,6 +19,7 @@ header {
 	width: 100%;
 }
 
+
 footer {
 	z-index: 1;
 	background-image: linear-gradient(rgba(248, 223, 79, 0), rgb(248, 223, 79));
@@ -33,10 +34,6 @@ a {
 	color: rgb(29, 172, 232);
 	text-decoration: none;
 	font-style: normal;
-}
-
-.h1 {
-	font-weight: normal;
 }
 
 #linktop {

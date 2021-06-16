@@ -1,0 +1,23 @@
+html {
+	scroll-behavior: smooth;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+footer {
+	height: 0px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	transition-property: height;
+	transition-duration: 0.5s;
+}
+
+a {
+	color: rgb(117, 117, 117);
+	text-decoration: none;
+	font-style: normal;
+}
+
+#linktop {
+	margin-right: 50px;
+}
